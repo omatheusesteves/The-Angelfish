@@ -1,0 +1,460 @@
+// Typography of project
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@300;400&display=swap');
+
+@mixin typeface-1($size, $device: desktop) {
+
+  font-family: 'Exo 2', sans-serif;
+
+  @if $size == hbig and $device == desktop {
+    font-size: 600px;
+    line-height: 100%;
+    font-weight: 300;
+  } @else if $size == hbig and $device == mobile {
+    font-size: 360px;
+    line-height: 100%;
+    font-weight: 300;
+  } @else if $size == hbig and $device == smallmobile {
+    font-size: 120px;
+    line-height: 100%;
+    font-weight: 300;
+  }
+  
+  @if $size == h0 and $device == desktop {
+    font-size: 240px;
+    line-height: 80%;
+    font-weight: 300;
+  } @else if $size == h0 and $device == mobile {
+    font-size: 120px;
+    line-height: 90%;
+    font-weight: 300;
+  } @else if $size == h0 and $device == smallmobile {
+    font-size: 64px;
+    line-height: 90%;
+    font-weight: 300;
+  }
+
+  @if $size == h1 and $device == desktop {
+    font-size: 120px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h1 and $device == mobile {
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h1 and $device == smallmobile {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  }
+  
+  @else if $size == h2 and $device == desktop {
+
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 300;
+  } @else if $size == h2 and $device == mobile {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h2 and $device == smallmobile {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 300;
+  } 
+  
+  @else if $size == h3 and $device == desktop {
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h3 and $device == mobile {
+    font-size: 36px;
+    line-height: 120%;
+    font-weight: 300;
+  } @else if $size == h3 and $device == smallmobile {
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 300;
+  }
+  
+  @else if $size == h4 and $device == desktop {
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 300;
+  } @else if $size == h4 and $device == mobile {
+    font-size: 28px;
+    line-height: 140%;
+    font-weight: 300;
+  } @else if $size == h4 and $device == smallmobile {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 300;
+  } 
+  
+  @else if $size == h5 and $device == desktop {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 400;
+  } @else if $size == h5 and $device == mobile {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+
+  @else if $size == h6 and $device == desktop {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == h6 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+  @else if $size == h7 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == h7 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+}
+
+@mixin typeface-2($size: p2, $device: desktop) {
+  font-family: 'Exo 2', sans-serif;
+
+  @if $size == p1 and $device == desktop {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 400;
+  } @else if $size == p1 and $device == mobile {
+    font-size: 22px;
+    line-height: 140%;
+    font-weight: 400;
+  } @else if $size == p1 and $device == smallmobile {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+  } 
+  
+  @else if $size == p2 and $device == desktop {
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == p2 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  } 
+  
+  @else if $size == p3 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == p3 and $device == mobile {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == p3 and $device == smallmobile {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+  @else if $size == p4 and $device == desktop {
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == p4 and $device == mobile {
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+  @else if $size == p5 and $device == desktop {
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: 400;
+  } @else if $size == p5 and $device == mobile {
+    font-size: 13px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+}
+
+.h-big{
+  color: rgba(24, 59, 97, 0.5);
+  @include typeface-1(hbig, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(hbig, mobile);
+  }
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.h0{
+  @include typeface-1(h0, desktop);
+  letter-spacing: 32px;
+
+  @include responsive(s) {
+    @include typeface-1(h0, mobile);
+    letter-spacing: 16px;
+  }
+
+  @include responsive(xs) {
+    @include typeface-1(h0, smallmobile);
+    letter-spacing: 8px;
+  }
+}
+
+.text-shadow-title{
+  text-shadow: 0px 16px 64px rgba(0, 0, 0, 0.60);
+}
+
+.label-spacing-xl{
+  letter-spacing: 32px !important;
+
+  @include responsive(s){
+    letter-spacing: 4px !important;
+  }
+}
+
+.label-spacing-m{
+  letter-spacing: 12px !important;
+
+  @include responsive(s){
+    letter-spacing: 4px !important;
+  }
+}
+
+.new-font{
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+  color: $white-light;
+  z-index: 5;
+  letter-spacing: 2px;
+
+  @include typeface-1(h1, desktop);
+
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+    letter-spacing: 0px;
+  }
+  @include responsive(xs) {
+    @include typeface-1(h1, smallmobile);
+    letter-spacing: 0px;
+  }
+  
+}
+
+h2 {
+  color: $white-light;
+  @include typeface-1(h2, desktop);
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h2, smallmobile);
+  }
+}
+
+h3 {
+  color: $white-light;
+  @include typeface-1(h3, desktop);
+  @include responsive(s) {
+    @include typeface-1(h3, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h3, smallmobile);
+  }
+}
+
+h4 {
+  color: $white-light;
+  @include typeface-1(h4, desktop);
+  @include responsive(s) {
+    @include typeface-1(h4, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-1(h4, smallmobile);
+  }
+}
+
+h5 {
+  color: $white-light;
+  @include typeface-1(h5, desktop);
+  @include responsive(s) {
+    @include typeface-1(h5, mobile);
+  }
+}
+
+h6 {
+  color: $white-light;
+
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+}
+
+.h7 {
+
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+}
+
+p {
+  letter-spacing: 0px;
+  color: $gray-7;
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-2(p3, smallmobile);
+  }
+}
+
+.uppercase{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.p1 {
+  @include typeface-2(p1, desktop);
+  @include responsive(s) {
+    @include typeface-2(p1, mobile);
+  }
+  @include responsive(xs) {
+    @include typeface-2(p1, smallmobile);
+  }
+}
+
+.p2 {
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+.p3 {
+  @include typeface-2(p3, desktop);
+  @include responsive(s) {
+    @include typeface-2(p3, mobile);
+  }
+}
+
+.p4 {
+  @include typeface-2(p4, desktop);
+  @include responsive(s) {
+    @include typeface-2(p4, mobile);
+  }
+}
+
+.p5 {
+
+  @include typeface-2(p5, desktop);
+  @include responsive(s) {
+    @include typeface-2(p5, mobile);
+  }
+}
+
+.p-title{
+  font-size: 18px;
+
+  @include responsive(s){
+    font-size: 16px;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  color: $white-dark;
+}
+
+span{
+  display: inline-block;
+}
+
+.letter-h1{
+  color: $white-normal;
+  letter-spacing: 1px;
+  text-transform: none;
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+strong {
+  color: $black-dark;
+  @include typeface-2(p2, desktop);
+  @include responsive(s) {
+    @include typeface-2(p2, mobile);
+  }
+}
+
+b{
+  color: $gray-2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+
+.h-xl{
+  color: $white-normal;
+
+  @include typeface-1(h0, desktop);
+  font-size: 240px;
+
+  @include responsive(s) {
+    @include typeface-1(h0, mobile);
+    font-size: 144px;
+  }
+}
+
+.h-l{
+  color: $white-normal;
+
+  @include typeface-1(h0, desktop);
+  font-size: 144px;
+
+  @include responsive(s) {
+    @include typeface-1(h0, mobile);
+    font-size: 96px;
+  }
+}
+
+.hbig{
+  @include typeface-1(hbig, desktop);
+  @include responsive(s) {
+    @include typeface-1(hbig, mobile);
+  }
+}
+
+//////////////////////////////////////////////////
+
+
